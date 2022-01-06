@@ -1,0 +1,53 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
+        integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;600&display=swap');
+    </style>
+
+</head>
+
+<body>
+    <div class="playlist ">
+        <header>
+            <button class="iconbox"><i class="fas fa-power-off"></i></button>
+            <h1>My Playlist</h1>
+            <button class="iconbox"><i class="fas fa-search"></i></button>
+        </header>
+        <audio src="assets/src/01 The Miracle (Of Joey Ramone).m4a" id="audio"></audio>
+        <div class="cover">
+            <img src="assets/src/01 The Miracle (Of Joey Ramone).jpeg" alt="" id="cover">
+
+        </div>
+
+        <div class="music-info centered">
+            <div class="title">
+                <p id="title">Track Name</p>
+                <p>Artist Name</p>
+            </div>
+            <div class="progress-container">
+                <div id="progress"></div>
+                <input type="range" min="1" max="100" value="70" class="slider" id="progressbar">
+            </div>
+            <div class="navigation">
+                <button id="prev"> <i class="fas fa-backward"></i>
+                </button>
+                <button id="play"> <i class="fas fa-pause"></i>
+                </button>
+                <button id="next"> <i class="fas fa-forward"></i></button>
+
+            </div>
+            <div class="swipeup"></div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
